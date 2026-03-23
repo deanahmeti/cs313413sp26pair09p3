@@ -12,7 +12,6 @@ public class Draw implements Visitor<Void> {
 
     // TODO entirely your job (except onCircle) -pair09 completed
     private final Canvas canvas;
-
     private final Paint paint;
 
     public Draw(final Canvas canvas, final Paint paint) {
