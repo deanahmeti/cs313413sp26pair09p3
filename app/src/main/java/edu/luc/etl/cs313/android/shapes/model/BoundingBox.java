@@ -8,11 +8,14 @@ package edu.luc.etl.cs313.android.shapes.model;
 public class BoundingBox implements Visitor<Location> {
 
     // TODO entirely your job (except onCircle)
+
+    //initiazling min/max
     int minX = Integer.MAX_VALUE;
     int minY = Integer.MAX_VALUE;
     int maxX = Integer.MIN_VALUE;
     int maxY = Integer.MIN_VALUE;
 
+    //calculate shapes & their individual bounding boxes
     for (final Shape shape : g.getShapes()) {
         final Location boundingBox = shape.accept(this);
         final Retangle rectangle = boundingBox.getRectangle();
