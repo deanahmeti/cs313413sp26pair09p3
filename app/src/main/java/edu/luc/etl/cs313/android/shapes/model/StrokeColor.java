@@ -6,7 +6,7 @@ package edu.luc.etl.cs313.android.shapes.model;
  */
 public final class StrokeColor implements Shape {
 
-    // TODO entirely your job
+    // TODO entirely your job -pair09 completed
     private final int color; //store color value
     private final Shape shape; //underlying shape will pair with a stroke color.
 
