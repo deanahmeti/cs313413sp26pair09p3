@@ -48,14 +48,9 @@ public class Draw implements Visitor<Void> {
 
     @Override
     public Void onGroup(final Group g) {
-        canvas.save(); //current transformation saved
-        canvas.translate(g.getX(), g.getY());
-
-        //draw all shapes within group
-        for(final Shape shape : g.getShapes()) {
+        for (final Shape shape : g.getShapes()) {
             shape.accept(this);
         }
-        canvas.restore();
         return null;
     }
 
